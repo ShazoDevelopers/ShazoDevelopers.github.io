@@ -58,27 +58,18 @@
     }
 
     .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      font-size: 21px;
-      letter-spacing: 1px;
-      color: var(--navy);
-    }
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 43px;
-      height: 43px;
-      border-radius: 12px;
-      color: white;
-      background: linear-gradient(135deg, #3678ed, #101b32);
-      font-size: 17px;
-      letter-spacing: -1px;
-    }
-
+.brand-logo {
+  display: block;
+  width: 210px;
+  height: 62px;
+  object-fit: contain;
+  object-position: left center;
+}
     .brand small {
       display: block;
       font-size: 10px;
@@ -352,10 +343,10 @@
   <header>
     <div class="container">
       <nav aria-label="Main navigation">
-        <a class="brand" href="#home" aria-label="Shazo Developers home">
-          <span class="brand-mark">SD</span>
-          <span>SHAZO<small>DEVELOPERS</small></span>
-        </a>
+      <a class="brand" href="#home" aria-label="Shazo Developers home">
+        <img src="shazo-logo.png" alt="Shazo Developers"
+         class="brand-logo">
+      </a>
 
         <div class="nav-links">
           <a href="#about">About</a>
